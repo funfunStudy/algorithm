@@ -1,0 +1,10 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    compile 'ch.qos.logback:logback-core:1.2.3'
+
+    testCompile 'junit:junit:4.12'
+}
