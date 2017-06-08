@@ -1,7 +1,5 @@
 
 subprojects {
-    apply plugin: 'idea'
-
     group = "funfunstudy"
 
    	repositories {
