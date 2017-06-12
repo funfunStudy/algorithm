@@ -1,0 +1,7 @@
+packages:
+  - .
+resolver: ghc-8.0.1
+
+extra-package-dbs: []
+extra-deps: []
+local-bin-path: /Users/wodydjjang/dev/funfun/algorithm/haskell/build/sandbox/files/bin

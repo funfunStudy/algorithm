@@ -1,0 +1,18 @@
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.prezi.haskell:gradle-haskell-plugin:0.4+'
+    }
+}
+
+apply plugin: 'haskell'
+
+haskell {
+    ghcVersion = "ghc-8.0.1"
+    snapshotId = "lts-7.0"
+    isExecutable = true
+}
