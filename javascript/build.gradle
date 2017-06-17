@@ -1,0 +1,17 @@
+plugins {
+    id "com.moowork.node" version "1.2.0"
+}
+
+node {
+    version = '6.11.0'
+    distBaseUrl = 'https://nodejs.org/dist'
+    download = true
+    workDir = file("${project.buildDir}/nodejs")
+}
+
+task helloworld(type: NodeTask) {
+    script = file('src/scripts/HelloWorld.js')
+//    args = ['arg1', 'arg2']
+//    options = ['--node-option', '--another-node-option']
+}
+
