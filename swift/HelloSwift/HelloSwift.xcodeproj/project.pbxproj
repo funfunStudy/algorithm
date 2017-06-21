@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		F5269B4D1EF900820011F972 /* HelloSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5269B501EF900820011F972 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F543AF641EFA4C86004EA78D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = HelloSwift/playgrounds/MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 		F5269B441EF900820011F972 = {
 			isa = PBXGroup;
 			children = (
+				F543AF631EFA4C16004EA78D /* PlayGround */,
 				F5269B4F1EF900820011F972 /* HelloSwift */,
 				F5269B4E1EF900820011F972 /* Products */,
 			);
@@ -60,6 +62,14 @@
 				F5269B501EF900820011F972 /* main.swift */,
 			);
 			path = HelloSwift;
+			sourceTree = "<group>";
+		};
+		F543AF631EFA4C16004EA78D /* PlayGround */ = {
+			isa = PBXGroup;
+			children = (
+				F543AF641EFA4C86004EA78D /* MyPlayground.playground */,
+			);
+			name = PlayGround;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +262,7 @@
 				F5269B561EF900820011F972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
