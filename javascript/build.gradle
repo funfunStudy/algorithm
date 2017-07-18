@@ -11,7 +11,15 @@ node {
 
 task helloworld(type: NodeTask) {
     script = file('src/scripts/HelloWorld.js')
-//    args = ['arg1', 'arg2']
+    args = ['arg1', 'arg2']
 //    options = ['--node-option', '--another-node-option']
 }
 
+task afterParty(type: NodeTask) {
+//    args = ['5 20', '99 101 1000 0 97']
+    script = file('src/scripts/AfterParty.js')
+}
+
+task digitalRoot(type: NodeTask) {
+    script = file('src/scripts/DigitalRoot.js')
+}
