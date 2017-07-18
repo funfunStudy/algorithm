@@ -14,7 +14,7 @@ object DigitalRoot {
         require(result == listOf(6, 3))
     }
 
-    fun getResult(sc: Scanner, acc: List<Int>): List<Int> {
+    tailrec fun getResult(sc: Scanner, acc: List<Int>): List<Int> {
         val value = sc.nextLine()
         return when (value) {
             "0" -> acc
@@ -22,7 +22,7 @@ object DigitalRoot {
         }
     }
 
-    fun getDigitalRoot(value: String): Int {
+    tailrec fun getDigitalRoot(value: String): Int {
         return if (value.length == 1) {
             value.toInt()
         } else {
