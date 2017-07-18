@@ -26,7 +26,7 @@ object DigitalRoot {
         return if (value.length == 1) {
             value.toInt()
         } else {
-            getDigitalRoot(value.toList()
+            getDigitalRoot(value
                     .map { it.toInt() - 48 }
                     .reduce { x, y -> x + y }
                     .toString())
