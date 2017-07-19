@@ -14,7 +14,7 @@ const getDigitalRoot = val => {
 const getResult = (input, acc) => {
   const [head, ...tail] = input.split('\n');
   switch (head) {
-    case '':
+    case '0':
       return acc;
     default:
       acc.push(getDigitalRoot(head));
