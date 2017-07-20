@@ -5,10 +5,9 @@ const getDigitalRoot = val => {
 
   return getDigitalRoot(
     val.split('')
-      .map(v => parseInt(v))
-      .reduce((a, b) => a + b)
+      .reduce((a, b) => +a + +b)
       .toString()
-  )
+  );
 };
 
 const getResult = (input, acc) => {
