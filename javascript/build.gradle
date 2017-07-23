@@ -23,3 +23,7 @@ task afterParty(type: NodeTask) {
 task digitalRoot(type: NodeTask) {
     script = file('src/scripts/DigitalRoot.js')
 }
+
+task SimpleBalancedParentheses(type: NodeTask) {
+    script = file('src/scripts/SimpleBalancedParentheses.js')
+}
