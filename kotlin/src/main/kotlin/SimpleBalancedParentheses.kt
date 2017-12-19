@@ -8,6 +8,7 @@ object SimpleBalancedParentheses {
         val negative1 = "((((((())"
         val negative2 = "()))"
         val negative3 = "(()()(()"
+        val negative4 = ")(()()(()"
 
         val bonus1 = "(5+6)∗(7+8)/(4+3)"
 
@@ -18,11 +19,12 @@ object SimpleBalancedParentheses {
         require(!solve(negative1.toList(), listOf()))
         require(!solve(negative2.toList(), listOf()))
         require(!solve(negative3.toList(), listOf()))
+        require(!solve(negative4.toList(), listOf()))
 
         require(solve(bonus1.toList(), listOf()))
     }
 
-    private fun solve(list: List<Char>, acc: List<Char>): Boolean = when {
+    tailrec private fun solve(list: List<Char>, acc: List<Char>): Boolean = when {
         list.isEmpty() -> acc.isEmpty()
         list.first() == ')' && acc.isEmpty() -> false
         list.first() == '(' -> solve(list.drop(1), acc.plus(list.first()))

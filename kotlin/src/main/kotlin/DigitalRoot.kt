@@ -11,6 +11,12 @@ object DigitalRoot {
         val sc = Scanner(System.`in`)
         val result = getResult(sc, listOf())
 
+        val  list = listOf(1,2,3,4,5)
+
+        list.drop(1)
+
+        for(i in 0..6)
+
         require(result == listOf(6, 3))
     }
 
