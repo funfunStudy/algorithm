@@ -10,3 +10,9 @@ executable helloworld
   hs-source-dirs:      src/main/haskell/helloworld
   build-depends:       base
   default-language:    Haskell2010
+
+executable simpleBalancedParentheses
+    main-is:             Main.hs
+    hs-source-dirs:      src/main/haskell/simpleBalancedParentheses
+    build-depends:       base
+    default-language:    Haskell2010
