@@ -1,0 +1,35 @@
+*.class
+*.log
+*.sc
+
+# exercism.io
+.keep
+
+# sbt specific
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/target/
+project/plugins/project/
+
+# scala-ide specific
+.scala_dependencies
+
+# intellij
+.settings/
+.idea/
+*.iml
+*.iws
+
+# osx
+.DS_Store
+
+# svn
+.svn/
+.metadata/
+
+# nodejs
+node_modules/
+
