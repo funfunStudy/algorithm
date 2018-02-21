@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
     println(solve(test4).filterNotNull())
 }
 
-fun solve(list: List<List<Int>>): List<Pair<Int, Int>?> {
+private fun solve(list: List<List<Int>>): List<Pair<Int, Int>?> {
     val xResult = list.map { it.max()!! }.min()
     val yResult = transfer(list, listOf()).map { it.min()!! }.max()
 
