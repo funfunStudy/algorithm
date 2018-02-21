@@ -16,3 +16,21 @@ executable simpleBalancedParentheses
     hs-source-dirs:      src/main/haskell/simpleBalancedParentheses
     build-depends:       base
     default-language:    Haskell2010
+
+--executable saddlePoint
+--    main-is:             Main.hs
+--    hs-source-dirs:      src/main/haskell/saddlepoint
+--    build-depends:       base
+--    default-language:    Haskell2010
+
+executable noscenariobaseball
+    main-is:             Main.hs
+    hs-source-dirs:      src/main/haskell/noscenariobaseball
+    build-depends:       base
+    default-language:    Haskell2010
+
+executable aircon
+    main-is:             Main.hs
+    hs-source-dirs:      src/main/haskell/aircon
+    build-depends:       base
+    default-language:    Haskell2010
