@@ -9,9 +9,7 @@ object SugarDelivery {
         require(solve(5000) == 1000, { "error" })
     }
 
-    private fun solve(number: Int): Int {
-        return recursive(number, (number / 5))
-    }
+    private fun solve(number: Int): Int = recursive(number, number / 5)
 
     private tailrec fun recursive(number: Int, fiveModResult: Int): Int = when {
         number % 5 == 0 -> fiveModResult
