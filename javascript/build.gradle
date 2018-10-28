@@ -27,3 +27,7 @@ task digitalRoot(type: NodeTask) {
 task SimpleBalancedParentheses(type: NodeTask) {
     script = file('src/scripts/SimpleBalancedParentheses.js')
 }
+
+task recordCounting(type: NodeTask) {
+    script = file('src/scripts/RecordCounter.js')
+}
