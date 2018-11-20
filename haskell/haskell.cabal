@@ -40,3 +40,9 @@ executable sugerdelivery
     hs-source-dirs:      src/main/haskell/sugardelivery
     build-depends:       base
     default-language:    Haskell2010
+
+executable birthdayChocolate
+  main-is:             Main.hs
+  hs-source-dirs:      src/main/haskell/birthdayChocolate
+  build-depends:       base
+  default-language:    Haskell2010
