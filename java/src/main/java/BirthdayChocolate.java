@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 /**
  * Created by yong on 2018. 11. 13..
  */
-public class Birthday Chocolate {
+public class BirthdayChocolate {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
