@@ -46,3 +46,21 @@ executable birthdayChocolate
   hs-source-dirs:      src/main/haskell/birthdayChocolate
   build-depends:       base
   default-language:    Haskell2010
+
+executable triplestep
+  main-is:             Main.hs
+  hs-source-dirs:      src/main/haskell/triplestep
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable stringzip
+  main-is:             Main.hs
+  hs-source-dirs:      src/main/haskell/stringzip
+  build-depends:       base
+  default-language:    Haskell2010
+
+executable programmers
+  main-is:             Main.hs
+  hs-source-dirs:      src/main/haskell/programmers
+  build-depends:       base
+  default-language:    Haskell2010
