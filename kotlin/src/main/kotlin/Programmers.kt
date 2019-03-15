@@ -25,11 +25,11 @@ fun main(args: Array<String>) {
 각 배포마다 몇 개의 기능이 배포되는지를 return 하도록 solution 함수를 완성하세요.
  */
 tailrec fun solve(prog: IntArray, spd: IntArray, acc: IntArray = intArrayOf()): IntArray = when {
-    prog.isEmpty() -> acc
+    prog.isEmpty() -> acc.reversed().toIntArray()
     prog.first() >= 100 -> {
         val temp = prog.takeWhile { it >= 100 }
         val size = temp.size
-        solve(prog.drop(size).toIntArray(), spd.drop(size).toIntArray(), acc.plus(size))
+        solve(prog.drop(size).toIntArray(), spd.drop(size).toIntArray(), intArrayOf(size).plus(acc))
     }
     else -> {
         val temp = zipping(prog, spd)
